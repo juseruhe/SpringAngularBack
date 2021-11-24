@@ -22,8 +22,7 @@ public class PersonaServiceImpl implements PersonaService {
 
 	@Override
 	public Persona mostrarPersona(int id) {
-		// TODO Auto-generated method stub
-		return null;
+		return repositorio.findById(id);
 	}
 
 	@Override
@@ -33,8 +32,7 @@ public class PersonaServiceImpl implements PersonaService {
 
 	@Override
 	public Persona actualizarPersona(Persona p) {
-		// TODO Auto-generated method stub
-		return null;
+		return repositorio.save(p);
 	}
 
 	@Override
