@@ -10,6 +10,6 @@ public interface PersonaRepository extends Repository<Persona,Integer> {
 	List<Persona> findAll();
 	Persona findById(int id);
 	Persona save(Persona p);
-// void delete(Persona p);
+    void delete(Persona p);
 
 }
