@@ -2,6 +2,8 @@ package com.pagina.crud.desarrollo.controller;
 
 import java.util.List;
 
+import javax.servlet.http.HttpServletResponse;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -49,4 +51,6 @@ public class Controlador {
 	public Persona eliminarPersona(@PathVariable("id") int id) {
 		return service.eliminarPersona(id);
 	}
+	
+
 }
